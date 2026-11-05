@@ -1,0 +1,65 @@
+{
+ "note": "L-Town benchmark data (hydraulic-model based), assumed tariff and constant energy per m3",
+ "n_hours": 8736,
+ "demand_mean_m3h": 34.115006812303484,
+ "policies": {
+  "historical": {
+   "cost": 471235.0516666667,
+   "volume_pumped_m3": 297930.1791666667,
+   "cost_per_m3_pumped": 1.581696265161008,
+   "net_level_change_m": -0.4900000000000002,
+   "hours_outside_tank_limits": 0,
+   "min_level": 2.09,
+   "max_level": 3.9,
+   "saving_vs_historical_pct": 0.0
+  },
+  "perfect": {
+   "cost": 389501.93141733936,
+   "volume_pumped_m3": 298016.60709999606,
+   "cost_per_m3_pumped": 1.3069806250315656,
+   "net_level_change_m": -0.06014272466903359,
+   "hours_outside_tank_limits": 0,
+   "min_level": 3.035379768649304,
+   "max_level": 3.9000000000000017,
+   "saving_vs_historical_pct": 17.36841934702791
+  },
+  "forecast": {
+   "cost": 388664.444401895,
+   "volume_pumped_m3": 298131.64748446073,
+   "cost_per_m3_pumped": 1.3036671808622835,
+   "net_level_change_m": 0.5120212079168023,
+   "hours_outside_tank_limits": 399,
+   "min_level": 1.3318531254849058,
+   "max_level": 4.357125307452928,
+   "saving_vs_historical_pct": 17.577906101360284
+  },
+  "mpc": {
+   "cost": 383916.0172783059,
+   "volume_pumped_m3": 298029.4963909802,
+   "cost_per_m3_pumped": 1.2881812771130967,
+   "net_level_change_m": 0.003963349489650714,
+   "hours_outside_tank_limits": 1,
+   "min_level": 2.049823871281224,
+   "max_level": 4.009626908257841,
+   "saving_vs_historical_pct": 18.556975477085867
+  }
+ },
+ "tariff_sensitivity_mpc": {
+  "peak1_shoulder1_off1": {
+   "saving_vs_historical_pct": -2.220446049250313e-14,
+   "hours_outside_tank_limits": 9
+  },
+  "peak1.5_shoulder1.25_off1": {
+   "saving_vs_historical_pct": 5.737924194257893,
+   "hours_outside_tank_limits": 1
+  },
+  "peak3_shoulder1.5_off1": {
+   "saving_vs_historical_pct": 18.556975477085867,
+   "hours_outside_tank_limits": 1
+  },
+  "peak5_shoulder2_off1": {
+   "saving_vs_historical_pct": 27.113596687384057,
+   "hours_outside_tank_limits": 1
+  }
+ }
+}
